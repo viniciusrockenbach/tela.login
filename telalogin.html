@@ -1,77 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width,initial-scale=1.0">
-    <title> LOGIN - CCM ZEBALLOS </title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
     <style>
-      /*Definindo estilos básicos para o corpo da página*/
+        /* Definindo estilos básicos para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 100% da altura da viewport */
+            background-color: #f2f2f2; /* Cor de fundo da página */
+        }
 
-      body {
-        font-family: Arial;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-items:center;
-        align-items:center;
-        height: 100vh; /* 100% da altura da viewport */
-        background-color: #f2f2f2; /* cor de fundo da página */
-      }
+        /* Estilos para o contêiner de login */
+        .login-container {
+            background-color: #ffffff; /* Cor de fundo do contêiner de login */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            overflow: hidden;
+            width: 300px;
+            max-width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
 
-      /*Estilos para o contêiner de ligin */
-      .login-container {
-        background-color: #ffffff; /* cor de fundo do container */
-        border-radius:8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*sombra suave */
-        overflo: hidden;
-        width: 300px;
-        max-width: 100%;
-        text-aling: center;
-        padding: 20px;
-      }
+        /* Estilos para o logo dentro do contêiner de login */
+        .login-container img {
+            width: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
 
-      /* Estilos para a logo dentro do contâiner de login */
-      .login-container img {
-        width: 80px;
-        boder-radius: 50%;
-        margin-bottom: 20px;
-      }
-      /*Estilos para os campos de entrada (input) */
-       .login-container input {
-         width: 100%;
-         padding: 10px;
-         margin-buttom: 15px;
-         box-sizing: border-box;
-         border: 1px solid #ccc; /* borda fina */
-         border-radius: 4px;
-       }
+        /* Estilos para os campos de entrada (input) */
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc; /* Borda fina cinza */
+            border-radius: 4px;
+        }
 
-      /* Estilo para o botão de login */
-      .login-container button {
-        with: 100%;
-        padding: 10px;
-        background-color: #4caf50;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        curso: pointer;
-      }
+        /* Estilos para o botão de login */
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50; /* Cor de fundo verde */
+            color: #fff; /* Cor do texto branco */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-      .login-container button:hover {
-        background-color: #45a049;/* cor  de fundo mais escura do verde */
-      }
-     
-       
+        /* Efeito de hover para o botão de login */
+        .login-container button:hover {
+            background-color: #45a049; /* Cor de fundo mais escura ao passar o mouse */
+        }
     </style>
-  </head>
-  <body>
-    <!--conteiner principal do login -->
+</head>
+<body>
+    <!-- Contêiner principal de login -->
     <div class="login-container">
-      <!-- logo -->
-      <img src='logoccm.png">
-        <!-- criado o formulario -->
+        <!-- Logo -->
+        <img src="imagem.png" alt="Logo">
+
+        <!-- Formulário de login -->
         <form>
-        <input type="text" placeholder="Usuario" required>
-        <input type="password" placeholder="Senha required>
-        <button type='submit">ACESSAR SISTEMA 
-    </button>
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>
