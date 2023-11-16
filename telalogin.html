@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<htmt lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width,
+      initial-scale=1.0">
+    <title> LOGIN - CCM ZEBALLOS </title>
+    <style>
+      /*Definindo estilos básicos para o corpo da página*/
+
+      body {
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-items:center;
+        align-items:center;
+        height: 100vh; /* 100% da altura da viewport */
+        background-color: #f2f2f2; /* cor de fundo da página */
+      }
+
+      /*Estilos para o contêiner de ligin */
+      .login-container {
+        background-color: #ffffff; /* cor de fundo do container */
+        border-radius:8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*sombra suave */
+        overflo: hidden;
+        width: 300px;
+        max-width: 100%;
+        text-aling: center;
+        padding: 20px;
+      }
+
+      /* Estilos para a logo dentro do contâiner de login */
+      .login-container img {
+        width: 80px;
+        boder-radius: 50%;
+        margin-bottom: 20px;
+      }
+      /*Estilos para os campos de entrada (input) */
+       .login-container input {
+         width: 100%;
+         padding: 10px;
+         margin-buttom: 15px;
+         box-sizing: border-box;
+         border: 1px solid #ccc; /* borda fina */
+         border-radius: 4px;
+       }
+
+      /* Estilo para o botão de login */
+      .login-container button {
+        with: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        curso: pointer;
+      }
+
+      .login-container button:hover {
+        background-color: #45a049;/* cor  de fundo mais escura do verde */
+      }
+     
+       
+    </style>
+  </head>
+  <body>
+    <!--conteiner principal do login -->
+    <div class="login-container">
+      <!-- logo -->
+      <img src='logoccm.png">
+        <!-- criado o formulario -->
+        <form>
+        <input type="text" placeholder="Usuario" required>
+        <input type="password" placeholder="Senha required>
+        <button type='submit">ACESSAR SISTEMA </button>
+    </form>
+    </div>
+  </body>
+</htmt>
